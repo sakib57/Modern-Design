@@ -1,0 +1,610 @@
+/*=======================================================
+                    DEFAULT VALUES
+
+            Greenish blue   : #34c6d3 (Buttons,Links,Lines,Background)
+            Steel gray      : #41464b (Heading)
+            Blue bayoux     : #64707b (paragrapgs)
+            White           : #fff
+            Black           : #000
+            
+=======================================================*/
+
+/*============== GENERAL CSS ==========================*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+h3 {
+    color: #41464b;
+    text-transform: uppercase;
+}
+p{
+    color: #64707b;
+    font-size: 16px;
+}
+
+/*=======================================================
+                    HOME
+=======================================================*/
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    background-image: url(../img/bg-home.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#home-content-box {
+    height: 100%;
+    width: 100%;
+    display: table;
+
+
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
+/*=======================================================
+                    PARALEX (Generic)
+=======================================================*/
+.bg-paralex{
+    background-attachment: fixed;
+}
+
+/*=======================================================
+                    BUTTONS (Generic)
+=======================================================*/
+
+.btn-general{
+    border-width: 2px;
+    border-radius: 0px;
+    padding: 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white{
+    border-color: #fff;
+    color: #fff;
+}
+.btn-white:hover,btn-white:focus{
+    background-color: #fff;
+    color: #41464b;
+}
+.btn-blue{
+    border-color: #34c6d3;
+    color: #34c6d3;
+}
+.btn-blue:hover,btn-blue:focus{
+    background-color: #34c6d3;
+    color: #fff;
+}
+.btn-back-to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 25px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
+
+
+/*=======================================================
+                    ANIMATE
+=======================================================*/
+#home-cover{
+    animation-delay: .1s;
+    animation-duration: .5s;
+}
+#home-heading{
+    animation-delay: .5s;
+    animation-duration: .7s;
+}
+#home-btn{
+    animation-delay: 1s;
+    animation-duration: .5s;
+}
+
+/*---------- CONTENT BOX (Generic) --------------------*/
+.content-box{
+    padding: 50px 0 50px 0;
+}
+.content-title h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.content-title-underline{
+    height: 3px;
+    background-color: #34c6d3;
+    width: 40px;
+    margin: 0 auto 30px auto;
+}
+/*=======================================================
+                    SERVICES
+=======================================================*/
+#service .container{
+    padding-top: 20px;
+}
+.service-item{
+    padding: 15px 0 15px 0;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.service-item-icon i {
+    color: #34c6d3;
+    padding: 10px;
+    float: left;
+    margin-right: 18px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+.service-item:hover .service-item-icon i{
+    color: #fff;
+    background-color: #34c6d3;
+}
+.service-item-title h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 0px 5px 0px;
+}
+.service-item-desc p{
+    margin: 0;
+    padding-left: 93px;
+}
+
+
+/*=======================================================
+                    ABOUT
+=======================================================*/
+#about-bg-diagonal {
+    width: 60%;
+    height: 650px;
+    float: right;
+    background-image: url(../img/bg-about.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    border-left: 140px solid #fff;
+    border-top: 650px solid rgba(0, 83, 119, 0);
+}
+#about-content-box{
+    float: left;
+    height: 650px;
+}
+#about-content-box-outer{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#about-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+#about .content-title h3{
+    text-align: left;
+}
+#about .content-title-underline{
+    margin: 0 0 30px 0;
+}
+
+/*=======================================================
+                    WORK
+=======================================================*/
+.row.no-gutter [class*=col-]{
+    padding-right: 0px;
+    padding-left:0px;
+}
+.img-wraper{
+    /*height: 60%;*/
+    overflow: hidden;
+}
+.img-wraper img{
+    width: 100%;
+}
+.img-wraper img:hover{
+    transform: scale(1.5);
+    transition: transform .5s;
+}
+#work .container-fluid{
+    padding-top: 30px;
+}
+/*=======================================================
+                    TEAM
+=======================================================*/
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #34c6d3;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #85dde4;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+.team-member{
+    margin: 0 15px 0 15px;
+    padding-top: 30px;
+}
+.team-member-info{
+    padding: 10px 0 10px 0;
+}
+h4.team-member-name{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1;
+    padding-top: 2px
+}
+h4.team-member-description{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1;
+    font-style: italic;
+    color: #34c6d3;
+}
+/*=======================================================
+                    SOCIAL
+=======================================================*/
+.social-list{
+    padding-left: 0px;
+}
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 6px
+}
+.icon-gray i{
+    color: #41464b;
+}
+.icon-white i{
+    color: #fff;
+}
+.social-icon i{
+    font-size: 17px;
+}
+.social-icon-lg i{
+    font-size: 25px;
+}
+.social-icon i:hover{
+    color: #34c6d3;
+}
+.social-icon-lg i:hover{
+    color: #34c6d3;
+}
+/*=======================================================
+                    TESTIMONIAL
+=======================================================*/
+#testimonial{
+    padding-top: 30px;
+}
+#testimonial-cover{
+    background-image: url(../img/bg-testimonials.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content-title-white h3{
+    color: #fff;
+}
+#customer-testimonials{
+    padding: 40px 0;
+}
+
+.testimonial img{
+    max-width: 130px;
+    margin:0 auto;
+}
+.testimonial blockquote{
+    font-family: Georgia,sans-serif;
+    font-style: italic;
+    position: relative;
+}
+.testimonial blockquote p{
+    padding: 10px 150px;
+    color: #fff;
+
+}
+span.quote-left,span.quote-right{
+    color: #fff;
+    font-size: 62px;
+    font-style: normal;
+    position: absolute;
+}
+span.quote-left {
+    top: -18px;
+    left: 100px;
+}
+span.quote-right {
+    bottom: -47px;
+    right: 93px;
+}
+.testimonial-author p{
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.testimonial-author p strong{
+    display: block;
+}
+/*=======================================================
+                    PRICING
+=======================================================*/
+.pricing-box{
+    border: 3px solid #34c6d3;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+h4.pricing-title{
+    background-color: #34c6d3;
+    display: inline-block;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+h3.pricing-value{
+    font-size: 60px;
+    font-weight: 700;
+}
+h3.pricing-value sup{
+    font-size: 28px;
+    font-weight: normal;
+    vertical-align: super;
+}
+ul.pricing-desc{
+    list-style: none;
+    padding-left: 0px;
+    margin: 20px 0 60px 0;
+}
+ul.pricing-desc li p{
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.pricing-box-lg{
+    padding: 90px 0;
+    margin:0px;
+    background-color: #34c6d3;
+}
+.pricing-box-lg h4.pricing-title{
+    background-color: #fff;
+    color: #34c6d3
+}
+.pricing-box-lg .pricing-desc p{
+    color: #fff;
+}
+
+/*=======================================================
+                    STATS
+=======================================================*/
+#sats-cover{
+    background-image: url(../img/bg-stats.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#stats .content-box{
+    background-color: rgba(0,0,0,.8);
+}
+.stats-item{
+    padding: 100px 0;
+}
+.stats-item i{
+    color: #34c6d3;
+}
+.stats-item h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+.stats-item p{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    
+}
+/*=======================================================
+                    CLIENTS
+=======================================================*/
+.client{
+    padding: 40px 0;
+}
+
+/*=======================================================
+                    FOOTER
+=======================================================*/
+footer{
+    background-color: #41464b;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 5px solid rgba(0,0,0,.1);
+}
+#contact-left h3,#contact-right h3{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#contact-left p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+#contact-info{
+    background-image: url(../img/world-map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+address{
+    color: #fff;
+}
+address strong, #phone-fax-email strong{
+    letter-spacing: 1px;
+}
+form .form-control{
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 8px 16px;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+form .form-control:focus{
+    background-color: transparent;
+    color: #fff;
+}
+
+#footer-bottom{
+    background-color:rgba(0,0,0,.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+#footer-copyright p{
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu{
+    /*float: left;*/
+    color: #fff;
+    font-size: 16px;
+    /*font-weight: 300;*/
+}
+#footer-menu ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+#footer-menu ul li{
+    display: inline-block;
+}
+#footer-menu a{
+    color: #fff;
+    font-size: 16px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+#footer-menu a:hover{
+    color: #34c6d3;
+}
+/*=======================================================
+                    NAVBAR
+=======================================================*/
+.navbar{
+    padding: 20px 0;
+    transition: all .5s;
+}
+#nav-bar-wraper{
+    width: 100%;
+    padding: 5px 100px;
+}
+.bg-custom{
+    background-color: rgba(0,0,0,.6);
+    padding: 7px 0;
+}
+.navbar-expand-xl .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+.navbar-expand-xl .navbar-nav .nav-link:hover {
+    color: #34c6d3;
+}
+.navbar-dark .navbar-toggler{
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+.nav-link.active{
+    color: #34c6d3; 
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color: #34c6d3;
+}
+#navbarNav hr{
+    background-color:#fff;
+    opacity: .3;
+    margin: 8px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

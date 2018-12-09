@@ -1,0 +1,251 @@
+
+/*=======================================================
+                    Responsive Media Queries
+=======================================================*/
+
+/* Extra Extra Small devices ( phones, 479px and below)*/
+@media (max-width: 479px) {
+	/*For mobile menu*/
+	.navbar{
+		background-color: rgba(0,0,0,.7);
+		padding: 0;
+	}
+	#nav-bar-wraper{
+		padding: 10px 20px;
+	}
+	/*Home Heading*/
+	#home-heading h3{
+		font-size: 35px;
+	}
+	/*Adjust Button*/
+	.btn-general{
+	    padding: 10px 24px;
+	    font-size: 14px;
+	}
+	/*Adjust About diagonal*/
+	#about-bg-diagonal {
+	    width: 100%;
+	    height: 350px;
+	    border-left: 0px;
+	    border-top: 0px;
+	    background-size: cover;
+    	background-position: center;
+    	float: none;
+	}
+	#about-content-box{
+		width: 100%;
+	    float: none;
+	    height: 350px;
+	}
+	/*Testimonial width */
+	.testimonial blockquote p {
+	    padding: 10px 50px;
+	}
+	.testimonial img{
+	    max-width: 70px;
+	    margin:0 auto;
+	}
+	/*Adjust Testimonial Quotation */
+	span.quote-left {
+	    left: 4px;
+	}
+	span.quote-right {
+	    right: 1px;
+	}
+	/* Adjust State */
+	.stats-item{
+	    padding: 10px;
+	}
+	/* Footer copyright*/
+	#footer-copyright p{
+		text-align: center;
+	}
+	/* Content Hedinh Adjust*/
+	.content-title h3{
+	    font-size: 25px;
+	}
+}
+
+/* Extra Small devices ( phones, 480px and up)*/
+@media (min-width: 480px) and (max-width: 575px) {
+	/*For mobile menu*/
+	.navbar{
+		background-color: rgba(0,0,0,.7);
+		padding: 0;
+	}
+	#nav-bar-wraper{
+		padding: 10px 20px;
+	}
+	/*Home Heading*/
+	#home-heading h3{
+		font-size: 35px;
+	}
+	/*Adjust Button*/
+	.btn-general{
+	    padding: 10px 24px;
+	    font-size: 14px;
+	}
+	/*Adjust About diagonal*/
+	#about-bg-diagonal {
+	    width: 100%;
+	    height: 350px;
+	    border-left: 0px;
+	    border-top: 0px;
+	    background-size: cover;
+    	background-position: center;
+    	float: none;
+	}
+	#about-content-box{
+		width: 100%;
+	    float: none;
+	    height: 350px;
+	}
+	/*Testimonial width */
+	.testimonial blockquote p {
+	    padding: 10px 50px;
+	}
+	.testimonial img{
+	    max-width: 70px;
+	    margin:0 auto;
+	}
+	/*Adjust Testimonial Quotation */
+	span.quote-left {
+	    left: 4px;
+	}
+	span.quote-right {
+	    right: 1px;
+	}
+	/* Adjust State */
+	.stats-item{
+	    padding: 15px 0;
+	}
+	/* Footer copyright*/
+	#footer-copyright p{
+		text-align: center;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+	/*For mobile menu*/
+	.navbar{
+		background-color: rgba(0,0,0,.7);
+		padding: 0;
+	}
+	#nav-bar-wraper{
+		padding: 10px 20px;
+	}
+	/*Home Heading*/
+	#home-heading h3{
+		font-size: 35px;
+	}
+	/*Adjust Button*/
+	.btn-general{
+	    padding: 10px 24px;
+	    font-size: 14px;
+	}
+	/*Adjust About diagonal*/
+	#about-bg-diagonal {
+	    width: 100%;
+	    height: 350px;
+	    border-left: 0px;
+	    border-top: 0px;
+	    background-size: cover;
+    	background-position: center;
+    	float: none;
+	}
+	#about-content-box{
+		width: 100%;
+	    float: none;
+	    height: 350px;
+	}
+	/*Testimonial width */
+	.testimonial blockquote p {
+	    padding: 10px 50px;
+	}
+	.testimonial img{
+	    max-width: 90px;
+	    margin:0 auto;
+	}
+	/*Adjust Testimonial Quotation */
+	span.quote-left {
+	    left: 4px;
+	}
+	span.quote-right {
+	    right: 1px;
+	}
+	/* Adjust State */
+	.stats-item{
+	    padding: 20px 0;
+	}
+	/* Footer copyright*/
+	#footer-copyright p{
+		text-align: center;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+	/*For mobile menu*/
+	.navbar{
+		background-color: rgba(0,0,0,.7);
+		padding: 0;
+	}
+	#nav-bar-wraper{
+		padding: 10px 20px;
+	}
+	/*Home Heading*/
+	#home-heading h3{
+		font-size: 45px;
+	}
+	/*Pricing*/
+	#pricing .col-md-4{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.pricing-box{
+    	padding: 35px 0;
+    	margin: 25px 0;
+	}
+	.pricing-box-lg{
+    	padding: 60px 0;
+    	margin:0px;
+	}
+	/*Testimonial width */
+	.testimonial blockquote p {
+	    padding: 10px 50px;
+	}
+	/*Adjust Testimonial Quotation */
+	span.quote-left {
+	    left: 4px;
+	}
+	span.quote-right {
+	    right: 1px;
+	}
+	/* Footer copyright*/
+	#footer-copyright p{
+		text-align: center;
+	}
+	
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+	/*For mobile menu*/
+	.navbar{
+		background-color: rgba(0,0,0,.7);
+		padding: 0;
+	}
+	#nav-bar-wraper{
+		padding: 10px 20px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.navbar-collapse{
+		float: right;
+	}
+}
+
